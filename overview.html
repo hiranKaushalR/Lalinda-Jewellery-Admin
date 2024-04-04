@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/overview.css" />
+    <title>Lalinda Admin Panel | Home</title>
+  </head>
+  <body>
+    <header class="">
+      <nav class="navbar navbar-dark fixed-top p-3">
+        <div class="container-fluid">
+          <div class="menu-button-container">
+            <img
+              class="menu-button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+              aria-label="Toggle navigation"
+              src="Assets/menu.svg"
+              alt="menu"
+            />
+
+            <p class="menu-page-name">Overview</p>
+          </div>
+          <div class="user-info-container">
+            <div class="text-light">
+              <h1 class="user-name">Pamil Lalinda</h1>
+              <p class="user-designation">Chairman-super admin</p>
+            </div>
+            <img
+              src="Assets/about-chairman.png"
+              alt=""
+              class="rounded-circle user-avatar"
+            />
+          </div>
+
+          <div
+            class="offcanvas offcanvas-start slider"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="text-light fs-3" id="offcanvasDarkNavbarLabel">
+                Overview
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <a href="overview.html"
+                  ><div class="navbar-nav-item">
+                    <img src="Assets/nav-overview.png" alt="" />
+                    <h1>Overview</h1>
+                  </div></a
+                >
+                <a href="inventory.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-inventory.png" alt="" />
+                    <h1>Inventory Manager</h1>
+                  </div>
+                </a>
+                <a href="users.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-users.png" alt="" />
+                    <h1>Users Manager</h1>
+                  </div>
+                </a>
+                <a href="sales.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-sales.png" alt="" />
+                    <h1>Sales Management</h1>
+                  </div>
+                </a>
+                <a href="billing.html"
+                  ><div class="navbar-nav-item">
+                    <img src="Assets/nav-billing.png" alt="" />
+                    <h1>Billing</h1>
+                  </div></a
+                >
+                <a href="report.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-report.png" alt="" />
+                    <h1>Report</h1>
+                  </div>
+                </a>
+                <a href="setting.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-settings.png" alt="" />
+                    <h1>Settings</h1>
+                  </div>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Filter Bar -->
+      <div class="tag-selection-container">
+        <p class="all" id="all">All</p>
+        <p class="colombo" id="colombo">Colombo</p>
+        <p class="ampara" id="ampara">Ampara</p>
+      </div>
+
+      <!-- All Tab -->
+      <div class="overview-details details-about-all" id="details-about-all">
+        <div class="doughnut-in-all-container">
+          <div class="doughnut-in-all-dropdown-container">
+            <select name="" id="">
+              <option value="7" selected>7 Days</option>
+              <option value="30">One Month</option>
+              <option value="365">One Year</option>
+            </select>
+          </div>
+          <canvas id="doughnut-in-all"></canvas>
+        </div>
+        <div class="barchart-in-all-container">
+          <canvas id="barchart-in-all"></canvas>
+        </div>
+      </div>
+
+      <!-- Colombo Tab -->
+      <div
+        class="overview-details details-about-colombo"
+        id="details-about-colombo"
+      >
+      <div class="doughnut-in-all-container">
+        <div class="doughnut-in-all-dropdown-container">
+          <select name="" id="">
+            <option value="7" selected>7 Days</option>
+            <option value="30">One Month</option>
+            <option value="365">One Year</option>
+          </select>
+        </div>
+        <canvas id="doughnut-in-colombo"></canvas>
+      </div>
+      <div class="barchart-in-all-container">
+        <canvas id="barchart-in-colombo"></canvas>
+      </div>
+      </div>
+
+      <!-- Ampara Tab -->
+      <div
+        class="overview-details details-about-ampara"
+        id="details-about-ampara"
+      >
+      <div class="doughnut-in-all-container">
+        <div class="doughnut-in-all-dropdown-container">
+          <select name="" id="">
+            <option value="7" selected>7 Days</option>
+            <option value="30">One Month</option>
+            <option value="365">One Year</option>
+          </select>
+        </div>
+        <canvas id="doughnut-in-ampara"></canvas>
+      </div>
+      <div class="barchart-in-all-container">
+        <canvas id="barchart-in-ampara"></canvas>
+      </div>
+      </div>
+    </main>
+
+    <!-- JavaScript Linking -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+
+    <script src="JavaScript/overview.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 160px 0 0 0;
+}
+
+.tag-selection-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag-selection-container > p {
+  font-size: 24px;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.all {
+  border-radius: 8px 0 0 8px;
+}
+.ampara {
+  border-radius: 0 8px 8px 0;
+}
+
+.inventory-product-detail-common-container {
+  width: 100%;
+}
+
+.inventory-product-detail-common-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.add-product {
+  background-color: #008080;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.add-product > img {
+  width: 150px;
+}
+
+.summary-product {
+  font-family: 'BakBak one', sans-serif;
+  border-radius: 8px;
+  background-color: #008080;
+  padding: 0 16px;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 50%;
+  max-width: 500px;
+}
+
+.summary-product-child {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.summary-product-child-item {
+  font-size: 24px;
+}
+
+.summary-product-child-quantity {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 650px) {
+  .tag-selection-container > p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tag-selection-container {
+    width: 95%;
+  }
+
+  .tag-selection-container > p {
+    padding: 6px;
+  }
+
+  .barchart-in-all-container {
+    min-width: 0px;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .tag-selection-container {
+    width: 98%;
+  }
+
+  .tag-selection-container > p {
+    font-size: 16px;
+  }
+}

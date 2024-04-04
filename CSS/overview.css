@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 160px 0 0 0;
+}
+
+.tag-selection-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag-selection-container > p {
+  font-size: 24px;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.all {
+  border-radius: 8px 0 0 8px;
+}
+.ampara {
+  border-radius: 0 8px 8px 0;
+}
+
+.overview-details {
+  margin: 4rem 0 0 0;
+  gap: 16px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.doughnut-in-all-container {
+  min-width: 250px;
+  width: 25%;
+}
+
+.doughnut-in-all-dropdown-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 16px 0;
+}
+
+.doughnut-in-all-dropdown-container > select {
+  padding: 4px 16px;
+  border-radius: 8px;
+  background-color: #008080;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.barchart-in-all-container {
+  min-width: 500px;
+  width: 50%;
+}
+
+@media screen and (max-width: 650px) {
+  
+  .tag-selection-container > p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tag-selection-container {
+    width: 95%;
+  }
+
+  .tag-selection-container > p {
+    padding: 6px;
+  }
+
+  .barchart-in-all-container {
+    min-width: 0px;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .tag-selection-container {
+    width: 98%;
+  }
+
+  .tag-selection-container > p {
+    font-size: 16px;
+  }
+}

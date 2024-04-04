@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 140px 0 0 0;
+  padding: 0 5%;
+}
+
+.users-and-suppliers-adding-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.adding-container {
+  display: flex;
+  background-color: #008080;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Bakbak One", sans-serif;
+}
+
+.adding-container > img {
+  width: 50px;
+}
+
+.users-and-suppliers-detail-card-container {
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  border: solid 1px #000;
+  padding: 12px 32px 12px 8px; 
+  border-radius: 12px;
+  width: 500px;
+}
+
+.detail-card-container > h3 {
+  background-color: #008080;
+  color: #fff;
+  font-family: "Bakbak One", sans-serif;
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.cards-container-child {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin: 32px 0;
+}
+
+.card-avatar-container > img {
+  border-radius: 999px;
+  width: 120px;
+}
+
+.card-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card-details-container-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-details-container-child > p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+.card-details-buttons-container {
+  padding: 8px 0 0 0;
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.card-details-buttons-container > button {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  padding: 4px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-details-buttons-container  {
+    padding: 0;
+  }
+
+  .card-details-buttons-container > button  {
+    margin: auto;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap')
