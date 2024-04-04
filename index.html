@@ -15,25 +15,32 @@
   <body class="login-page">
     <div class="login-container">
       <div class="login-container--box">
-        <h1>Lalinda Jewellery Admin</h1>
-        <form action="">
-          <div class="pakaya">
-            <div class="img-in-form">
-              <img src="Assets/user-in-login-form.svg" alt="" />
+        <div class="logo-container">
+          <img src="Assets/logo-in-the-login.png" alt="">
+        </div>
+        <div class="body-container">
+          <h1>Lalinda Jewellery Admin</h1>
+          <form action="">
+            <div class="input-img--container">
+              <div class="img-in-form">
+                <img src="Assets/user-in-login-form.svg" alt="" />
+              </div>
+              <input type="text" placeholder="Username" autocomplete="username" required />
             </div>
-            <input type="text" placeholder="Username" required />
-          </div>
-          <div class="pakaya">
-            <div class="img-in-form">
-              <img src="Assets/password-in-login-form.svg" alt="" />
+            <div class="input-img--container">
+              <div class="img-in-form">
+                <img src="Assets/password-in-login-form.svg" alt="" />
+              </div>
+              <input type="password" placeholder="Password" autocomplete="current-password" required />
             </div>
-            <input type="password" placeholder="Password" required />
-          </div>
-          
-          <button type="submit" id="login-button">Log in</button>
-          
-          <a href="overview.html"><p class="forget-password">Forget Password ?</p></a>
-        </form>
+
+            <button type="submit" id="login-button">Log in</button>
+
+            <a href="overview.html"
+              ><p class="forget-password">Forget Password ?</p></a
+            >
+          </form>
+        </div>
       </div>
     </div>
 

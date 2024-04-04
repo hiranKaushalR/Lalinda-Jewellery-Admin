@@ -18,35 +18,38 @@
 }
 
 .login-container--box {
-  background-color: #001f3f;
+  background-color: #0C0500;
   border-radius: 24px;
   width: 80%;
-  max-width: 600px;
   padding: 4%;
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  flex-direction: column;
+  align-items: center;
   gap: 10%;
   min-height: 400px;
-  height: 60vh;
+
 }
 
-.login-container--box > h1 {
+.logo-container > img {
+  width: 80%;
+  min-width: 300px;
+}
+
+.body-container > h1 {
   color: #ffffff;
   font-size: 48px;
   text-align: center;
   font-weight: 600;
 }
 
-.login-container--box > form {
+.body-container > form {
   display: flex;
   align-items: stretch;
   flex-direction: column;
   gap: 16px;
 }
 
-.pakaya {
+.input-img--container {
   display: flex;
   align-items: stretch;
   width: 100%;
@@ -63,7 +66,7 @@
   width: 25px;
 }
 
-input {
+.input-img--container > input {
   margin: 0;
   padding: 4px 8px;
   border-radius: 0 4px 4px 0;
@@ -73,7 +76,7 @@ input {
   width: 100%;
 }
 
-.login-container--box > form > button {
+.body-container > form > button {
   outline: none;
   border: none;
   font-size: 18px;
@@ -91,10 +94,50 @@ input {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 500px) {
-  .login-container--box > h1 {
-    font-size: 30px;
+@media screen and (max-width: 1110px) {
+
+  .logo-container > img {
+    min-width: 250px;
+  }
+
+  .body-container > h1 {
+    font-size: 38px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 982px) {
+
+  .logo-container > img {
+    width: 150px;
+  }
+
+  .body-container > h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+  .logo-container {
+    display: none
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .body-container > h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .input-img--container > input {
+    font-size: 16px;
+  }
+  
+  .forget-password {
+    font-size: 14px;
   }
 }
 
