@@ -68,6 +68,106 @@ main {
   font-size: 24px;
 }
 
+.inventory-product-detail-common-body {
+  padding: 64px 5%;
+}
+
+.product-card-container {
+  font-family: "poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.product-card {
+  border: solid 2px #ffd700;
+  padding: 16px 16px 16px 8px;
+  border-radius: 8px;
+  width: 500px;
+}
+
+.product-card-id-container > p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.product-card-body-container {
+  display: flex;
+  gap: 32px;
+  justify-content: space-evenly;
+}
+
+.product-card-image > img {
+  width: 200px;
+}
+
+.product-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.product-card-single-detail {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.product-card-single-detail > p {
+  margin: 0;
+  padding: 0;
+}
+
+.product-card-button-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card-button-detail > button {
+  border: none;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #008080;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1140px) {
+  .product-card {
+    width: 280px;
+  }
+
+  .product-card-container {
+   justify-content: center;
+  }
+
+  .product-card-body-container {
+    flex-direction: column;
+  }
+
+  .product-card-image > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .product-card {
+    width: 600px;
+  }
+
+  .product-card-body-container {
+    flex-direction: row;
+  }
+
+  .product-card-image > img {
+    width: 200px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .summary-product {
     display: grid;
@@ -79,6 +179,24 @@ main {
 @media screen and (max-width: 650px) {
   .tag-selection-container > p {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .product-card {
+    width: 350px;
+  }
+
+  .product-card-container {
+   justify-content: center;
+  }
+
+  .product-card-body-container {
+    flex-direction: column;
+  }
+
+  .product-card-image > img {
+    width: 100%;
   }
 }
 

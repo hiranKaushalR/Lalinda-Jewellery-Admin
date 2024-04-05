@@ -47,12 +47,12 @@ section {
 }
 
 .inventory-image {
-  width: 250px;
+  width: 200px;
   transition: all ease-in 0.1s;
 }
 
 .inventory-image:hover {
-  width: 252px;
+  width: 202px;
 }
 
 @media screen and (max-width: 645px) {
