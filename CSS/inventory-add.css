@@ -5,5 +5,33 @@
 
 main {
   margin: 160px 0 0 0;
+  padding: 0 1%;
 }
 
+.supplier-select-and-add {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 24px 0;
+}
+
+.select-supplier > select {
+  padding: 8px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  outline: none;
+  background-color: #003d7d;
+  color: #fff;
+}
+
+.add-supplier {
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+  gap: 8px;
+}
+
+.add-supplier > img {
+  width: 50px;
+}
