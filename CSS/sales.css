@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 160px 0 0 0;
+}
+
+.tag-selection-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag-selection-container > p {
+  font-size: 24px;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.all {
+  border-radius: 8px 0 0 8px;
+}
+
+.ampara {
+  border-radius: 0 8px 8px 0;
+}
+
+.tag-selection-container > p {
+  font-size: 20px;
+}
+
+section {
+  padding: 16px 5%;
+  position: relative;
+}
+
+section > select {
+  padding: 4px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border: solid #000000 1.5px;
+  border-radius: 4px;
+  outline: none;
+  float: right;
+}
+
+.sub-tag-selection-common-container {
+  margin: 4rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-tag-selection-common-container > p {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px 4px;
+}
+
+.all-products-in-common-section {
+    border-radius: 6px 0 0 6px;
+}
+
+.rings-products-in-common-section {
+    border-radius: 0 6px 6px 0;
+}

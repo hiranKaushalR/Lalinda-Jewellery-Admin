@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/sales.css" />
+    <title>Lalinda Admin Panel | Inventory</title>
+  </head>
+  <body>
+    <header class="">
+      <nav class="navbar navbar-dark fixed-top p-3">
+        <div class="container-fluid">
+          <div class="menu-button-container">
+            <img
+              class="menu-button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar"
+              aria-controls="offcanvasDarkNavbar"
+              aria-label="Toggle navigation"
+              src="Assets/menu.svg"
+              alt="menu"
+            />
+
+            <p class="menu-page-name">Inventory Manager</p>
+          </div>
+          <div class="user-info-container">
+            <div class="text-light">
+              <h1 class="user-name">Pamil Lalinda</h1>
+              <p class="user-designation">Chairman-super admin</p>
+            </div>
+            <img
+              src="Assets/about-chairman.png"
+              alt=""
+              class="rounded-circle user-avatar"
+            />
+          </div>
+
+          <div
+            class="offcanvas offcanvas-start slider"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="text-light fs-3" id="offcanvasDarkNavbarLabel">
+                Inventory Manager
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <a href="overview.html"
+                  ><div class="navbar-nav-item">
+                    <img src="Assets/nav-overview.png" alt="" />
+                    <h1>Overview</h1>
+                  </div></a
+                >
+                <a href="inventory.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-inventory.png" alt="" />
+                    <h1>Inventory Manager</h1>
+                  </div>
+                </a>
+                <a href="users.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-users.png" alt="" />
+                    <h1>Users Manager</h1>
+                  </div>
+                </a>
+                <a href="sales.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-sales.png" alt="" />
+                    <h1>Sales Management</h1>
+                  </div>
+                </a>
+                <a href="billing.html"
+                  ><div class="navbar-nav-item">
+                    <img src="Assets/nav-billing.png" alt="" />
+                    <h1>Billing</h1>
+                  </div></a
+                >
+                <a href="report.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-report.png" alt="" />
+                    <h1>Report</h1>
+                  </div>
+                </a>
+                <a href="setting.html">
+                  <div class="navbar-nav-item">
+                    <img src="Assets/nav-settings.png" alt="" />
+                    <h1>Settings</h1>
+                  </div>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <!-- Filter Bar -->
+        <div class="tag-selection-container">
+          <p class="all" id="all">All</p>
+          <p class="colombo" id="colombo">Colombo</p>
+          <p class="ampara" id="ampara">Ampara</p>
+        </div>  
+          <!-- All Section -->
+          <div class="sales-detail-all" id="sales-detail-all">
+            <!-- Filter Bar for the Products in all section -->
+            <div
+              class="sub-tag-selection-all-container sub-tag-selection-common-container"
+              id="sub-tag-selection-all-container"
+            >
+              <p
+                class="all-products-in-all-section all-products-in-common-section"
+                id="all-products-in-all-section"
+              >
+                All
+              </p>
+              <p
+                class="necklace-products-in-all-section necklace-products-in-common-section"
+                id="necklace-products-in-all-section"
+              >
+                Necklace
+              </p>
+              <p
+                class="bracelets-products-in-all-section bracelets-products-in-common-section"
+                id="bracelets-products-in-all-section"
+              >
+                Bracelets
+              </p>
+              <p
+                class="earrings-products-in-all-section earrings-products-in-common-section"
+                id="earrings-products-in-all-section"
+              >
+                Earrings
+              </p>
+              <p
+                class="rings-products-in-all-section rings-products-in-common-section"
+                id="rings-products-in-all-section"
+              >
+                Rings
+              </p>
+            </div>
+
+            <div class="sub-body-in-all">
+              <div
+                class="all-products-detail-container-in-all-section common-products-detail-container-in-all-section"
+                id="all-products-detail-container-in-all-section"
+              >
+                All in All
+              </div>
+              <div
+                class="necklace-products-detail-container-in-all-section common-products-detail-container-in-all-section"
+                id="necklace-products-detail-container-in-all-section"
+              >
+                Necklace in all
+              </div>
+              <div
+                class="bracelets-products-detail-container-in-all-section common-products-detail-container-in-all-section"
+                id="bracelets-products-detail-container-in-all-section"
+              >
+                bracelets in all
+              </div>
+              <div
+                class="earrings-products-detail-container-in-all-section common-products-detail-container-in-all-section"
+                id="earrings-products-detail-container-in-all-section"
+              >
+                earring in all
+              </div>
+              <div
+                class="rings-products-detail-container-in-all-section common-products-detail-container-in-all-section"
+                id="rings-products-detail-container-in-all-section"
+              >
+                rings in all
+              </div>
+            </div>
+          </div>
+          <!-- Colombo Section -->
+          <div class="sales-detail-colombo" id="sales-detail-colombo">
+            <!-- Filter Bar for the Products in Colombo section -->
+            <div
+              class="sub-tag-selection-colombo-container sub-tag-selection-common-container"
+              id="sub-tag-selection-colombo-container"
+            >
+              <p
+                class="all-products-in-colombo-section all-products-in-common-section"
+                id="all-products-in-colombo-section"
+              >
+                All
+              </p>
+              <p
+                class="necklace-products-in-colombo-section necklace-products-in-common-section"
+                id="necklace-products-in-colombo-section"
+              >
+                Necklace
+              </p>
+              <p
+                class="bracelets-products-in-colombo-section bracelets-products-in-common-section"
+                id="bracelets-products-in-colombo-section"
+              >
+                Bracelets
+              </p>
+              <p
+                class="earrings-products-in-colombo-section earrings-products-in-common-section"
+                id="earrings-products-in-colombo-section"
+              >
+                Earrings
+              </p>
+              <p
+                class="rings-products-in-colombo-section rings-products-in-common-section"
+                id="rings-products-in-colombo-section"
+              >
+                Rings
+              </p>
+            </div>
+
+            <div class="sub-body-in-colombo">
+              <div
+                class="all-products-detail-container-in-colombo-section common-products-detail-container-in-colombo-section"
+                id="all-products-detail-container-in-colombo-section"
+              >
+                All in colombo
+              </div>
+              <div
+                class="necklace-products-detail-container-in-colombo-section common-products-detail-container-in-colombo-section"
+                id="necklace-products-detail-container-in-colombo-section"
+              >
+                Necklace in colombo
+              </div>
+              <div
+                class="bracelets-products-detail-container-in-colombo-section common-products-detail-container-in-colombo-section"
+                id="bracelets-products-detail-container-in-colombo-section"
+              >
+                bracelets in colombo
+              </div>
+              <div
+                class="earrings-products-detail-container-in-colombo-section common-products-detail-container-in-colombo-section"
+                id="earrings-products-detail-container-in-colombo-section"
+              >
+                earring in colombo
+              </div>
+              <div
+                class="rings-products-detail-container-in-colombo-section common-products-detail-container-in-colombo-section"
+                id="rings-products-detail-container-in-colombo-section"
+              >
+                rings in colombo
+              </div>
+            </div>
+          </div>
+          <!-- Ampara Section -->
+          <div class="sales-detail-ampara" id="sales-detail-ampara">
+            <!-- Filter Bar for the Products in Ampara section -->
+            <div
+              class="sub-tag-selection-ampara-container sub-tag-selection-common-container"
+              id="sub-tag-selection-ampara-container"
+            >
+              <p
+                class="all-products-in-ampara-section"
+                id="all-products-in-ampara-section"
+              >
+                All
+              </p>
+              <p
+                class="necklace-products-in-ampara-section"
+                id="necklace-products-in-ampara-section"
+              >
+                Necklace
+              </p>
+              <p
+                class="bracelets-products-in-ampara-section bracelets-products-in-common-section"
+                id="bracelets-products-in-ampara-section"
+              >
+                Bracelets
+              </p>
+              <p
+                class="earrings-products-in-ampara-section earrings-products-in-common-section"
+                id="earrings-products-in-ampara-section"
+              >
+                Earrings
+              </p>
+              <p
+                class="rings-products-in-ampara-section rings-products-in-common-section"
+                id="rings-products-in-ampara-section"
+              >
+                Rings
+              </p>
+            </div>
+
+            <div class="sub-body-in-ampara">
+                <div
+                  class="all-products-detail-container-in-ampara-section common-products-detail-container-in-ampara-section"
+                  id="all-products-detail-container-in-ampara-section"
+                >
+                  All in ampara
+                </div>
+                <div
+                  class="necklace-products-detail-container-in-ampara-section common-products-detail-container-in-ampara-section"
+                  id="necklace-products-detail-container-in-ampara-section"
+                >
+                  Necklace in ampara
+                </div>
+                <div
+                  class="bracelets-products-detail-container-in-ampara-section common-products-detail-container-in-ampara-section"
+                  id="bracelets-products-detail-container-in-ampara-section"
+                >
+                  bracelets in ampara
+                </div>
+                <div
+                  class="earrings-products-detail-container-in-ampara-section common-products-detail-container-in-ampara-section"
+                  id="earrings-products-detail-container-in-ampara-section"
+                >
+                  earring in ampara
+                </div>
+                <div
+                  class="rings-products-detail-container-in-ampara-section common-products-detail-container-in-ampara-section"
+                  id="rings-products-detail-container-in-ampara-section"
+                >
+                  rings in ampara
+                </div>
+              </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- JavaScript Linking -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JavaScript/sales.js"></script>
+  </body>
+</html>
