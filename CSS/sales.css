@@ -39,20 +39,11 @@ section {
   position: relative;
 }
 
-section > select {
-  padding: 4px 20px;
-  font-size: 18px;
-  font-weight: 600;
-  border: solid #000000 1.5px;
-  border-radius: 4px;
-  outline: none;
-  float: right;
-}
-
 .sub-tag-selection-common-container {
-  margin: 4rem 0 0 0;
   display: flex;
   justify-content: space-between;
+  width: 79%;
+  margin: 1rem auto;
 }
 
 .sub-tag-selection-common-container > p {
@@ -61,12 +52,244 @@ section > select {
   text-align: center;
   cursor: pointer;
   padding: 8px 4px;
+  font-weight: 500;
 }
 
 .all-products-in-common-section {
-    border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
 }
 
 .rings-products-in-common-section {
-    border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.common-products-detail-container-in-common-section--header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin: auto;
+  width: 93%;
+  border-bottom: solid 3px #000000;
+}
+
+.common-products-detail-container-in-common-section--header > h2 {
+  border: solid 1px #000000;
+  padding: 0 16px;
+}
+
+.common-products-detail-container-in-common-section--header > select {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 2px 12px;
+  background-color: #008080;
+  color: #b8ecff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.common-products-detail-container-in-common-section--body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  width: 93%;
+  margin: 16px auto;
+}
+
+.common-products-detail-container-in-common-section--body > a {
+  color: #000000;
+}
+
+.product-detail-card {
+  width: 550px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 8px 12px;
+  border: solid 2px #ffd700;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-detail-img-container > img {
+  width: 120px;
+  border-radius: 555px;
+  border: solid 2px;
+}
+
+.product-detail-detail-container {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.detail-container--heading > h1 {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.detail-container-supplier {
+  display: flex;
+  gap: 32px;
+  font-weight: 500;
+}
+
+.detail-container-supplier > p {
+  margin: 0;
+  padding: 0;
+}
+
+.detail-container-tag > p {
+  background-color: #696868;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1230px) {
+  .product-detail-card {
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .product-detail-detail-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detail-container-supplier {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .common-products-detail-container-in-common-section--body {
+    justify-content: center;
+  }
+  .product-detail-card {
+    width: 600px;
+    flex-direction: row;
+  }
+
+  .product-detail-detail-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .detail-container-supplier {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .product-detail-card {
+    width: 500px;
+  }
+  .tag-selection-container > p {
+    font-size: 20px;
+  }
+
+  .sub-tag-selection-common-container > p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .product-detail-card {
+    width: 450px;
+  }
+
+  .detail-container--heading > h1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .detail-container-supplier {
+    gap: 24px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tag-selection-container {
+    width: 95%;
+  }
+
+  .tag-selection-container > p {
+    padding: 6px;
+  }
+
+  .sub-tag-selection-common-container {
+    width: 94%;
+  }
+
+  .sub-tag-selection-common-container > p {
+    padding: 4px 2px;
+    font-size: 15px;
+  }
+
+  .product-detail-card {
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .product-detail-detail-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detail-container-supplier {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .product-detail-card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .tag-selection-container {
+    width: 98%;
+  }
+
+  .tag-selection-container > p {
+    font-size: 16px;
+  }
+
+  .sub-tag-selection-common-container {
+    width: 100%;
+  }
+
+  .sub-tag-selection-common-container > p {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .detail-container--heading > h1 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .detail-container-supplier {
+    font-size: 14px;
+  }
+
+  .detail-container-tag > p {
+    font-size: 14px;
+  }
 }
