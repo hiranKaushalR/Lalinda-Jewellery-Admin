@@ -11,13 +11,13 @@ main {
 form {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
   gap: 24px;
 }
 
 .form-input {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   display: flex;
   gap: 8px;
@@ -25,6 +25,30 @@ form {
   padding: 4px 8px;
   font-size: 18px;
   border-radius: 8px;
+}
+
+.form-input-address {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.address-lane-input {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: #fff;
+  max-width: 500px;
+}
+
+.address-lane-input > input {
+  border-radius: 4px;
+  padding: 2px 8px;
 }
 
 .form-input > img {
@@ -39,6 +63,16 @@ form {
   font-weight: 600;
 }
 
+.form-input > input[type="date"] {
+  text-transform: uppercase;
+}
+
+.form-input > select {
+  background-color: #b8ecff;
+  border: none;
+  outline: none;
+  width: 100%;
+}
 
 .form-input-type-file {
   position: relative;
@@ -52,7 +86,6 @@ form {
 
 .form-input-type-file > label {
   background-color: #b8ecff;
-  position: absolute;
   margin: auto;
   top: 0;
   bottom: 0;
@@ -66,5 +99,43 @@ form {
 }
 
 .form-input-type-file > label > img {
-    width: 40px;
+  width: 40px;
+}
+
+.profile-picture-label {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.form-input-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-input-button {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 48px;
+  border: none;
+  border-radius: 10px;
+  background-color: #008080;
+  color: gold;
+}
+
+.pop-up-modal {
+  margin: 160px 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: solid 3px #000;
+}
+
+@media screen and (max-width: 1140px) {
+  form {
+    flex-direction: column;
+  }
 }
