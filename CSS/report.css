@@ -83,14 +83,22 @@ main {
   align-items: center;
 }
 
-.doughnut-in-all-container {
+.doughnut-in-common-container {
   min-width: 250px;
   width: 25%;
 }
 
-.barchart-in-all-container {
+.barchart-in-common-container {
   min-width: 500px;
   width: 50%;
+}
+
+.text-report {
+  margin: 48px 0 0 0;
+  padding: 0 10%;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 650px) {
@@ -131,6 +139,12 @@ main {
   .sub-tag-selection-common-container > p {
     padding: 4px 2px;
     font-size: 15px;
+  }
+
+  .barchart-in-common-container {
+    min-width: 0px;
+    width: 100%;
+    height: 500px;
   }
 }
 
