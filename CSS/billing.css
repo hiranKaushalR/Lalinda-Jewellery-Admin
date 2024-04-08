@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 160px 0 0 0;
+  padding: 0 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.billing-detail-and-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.billing-detail-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.billing-detail-id > input {
+  width: 100px;
+  border-radius: 8px;
+  outline: none;
+  padding: 3px 4px;
+  font-size: 14px;
+}
+
+.billing-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.billing-form > input {
+  width: 350px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  outline: none;
+  border-color: black;
+}
+
+.more-contact-info-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.more-contact-info-button > p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.more-contact-info-button > img {
+  margin: 0;
+  padding: 0;
+  width: 25px;
+}
+
+.billing-note-container {
+  margin: 24px 0 0 0;
+}
+
+.billing-note-container > textarea {
+  width: 100%;
+  border-radius: 6px;
+  padding: 4px 8px;
+  resize: none;
+  outline: none;
+}
+
+@media screen and (max-width: 700px) {
+  .billing-detail-and-form-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .billing-form > input {
+    width: 280px;
+  }
+}
