@@ -60,7 +60,8 @@ form {
   display: flex;
   justify-content: center;
   border-radius: 8px;
-  width: 200px;
+  width: 50px;
+  height: 50px;
 }
 
 .form-input-type-file > label > img {
