@@ -153,6 +153,8 @@ main {
   background-color: #ffd700;
 }
 
+
+
 @media screen and (max-width: 650px) {
   .tag-selection-container > p {
     font-size: 20px;

@@ -4,8 +4,8 @@
 }
 
 main {
-  margin: 160px 0 0 0;
-  padding: 0 1%;
+  margin: 160px 0 64px 0;
+  padding: 0 5%;
 }
 
 .supplier-select-and-add {
@@ -13,6 +13,17 @@ main {
   justify-content: space-around;
   align-items: center;
   margin: 0 0 24px 0;
+}
+
+.select-item-container > button {
+  padding: 8px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  outline: none;
+  background-color: #003d7d;
+  color: #fff;
+  border: none;
+  outline: none;
 }
 
 .select-supplier > select {
@@ -34,4 +45,112 @@ main {
 
 .add-supplier > img {
   width: 50px;
+}
+
+.updating-quantity-for-currently-available-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  margin: 64px 0;
+
+}
+
+.updating-quantity-for-currently-available-item > p {
+  margin: 0;
+  padding: 2px 12px;
+  border: solid 1px #000;
+  border-radius: 4px;
+}
+
+.updating-quantity-for-currently-available-item > input[type="number"] {
+  outline: none;
+  padding: 4px 8px;
+}
+
+.updating-quantity-for-currently-available-item > input[type="submit"] {
+  background-color: #ffd700;
+  font-size: 18px;
+  padding: 2px 48px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.supply-detail-table {
+  min-width: 560px;
+  margin: 24px auto;
+}
+
+.supply-detail-footer-sub-contain {
+  float: right;
+}
+
+.footer-detail-container-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.footer-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-button-container > button {
+  border: none;
+  outline: none;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #ffd700;
+}
+
+.select-item-modal-head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.select-item-modal-head-container > input {
+  padding: 2px 6px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.select-item-modal-head-container > button {
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: #003d7d;
+  color: #fff;
+}
+
+.supply-detail-footer-container {
+  margin: 0 0 64px 0;
+}
+
+.select-item-modal-body-container{
+  min-width: 800px;
+}
+
+.select-item-modal-product-image > img {
+  width: 50px;
+  border-radius: 99px;
+}
+
+@media screen and (max-width: 520px) {
+  .updating-quantity-for-currently-available-item  {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .supplier-select-and-add {
+    flex-direction: column;
+    gap: 8px;
+  }
 }

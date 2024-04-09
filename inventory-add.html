@@ -116,6 +116,14 @@
     <main>
       <div class="supplier-container">
         <div class="supplier-select-and-add">
+          <div class="select-item-container">
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#select-item-modal-pop-up"
+            >
+              Select Item
+            </button>
+          </div>
           <div class="select-supplier">
             <select name="" id="">
               <option value="">Mahindananda</option>
@@ -123,23 +131,402 @@
               <option value="">Roopasinghe</option>
             </select>
           </div>
-          <div class="add-supplier">
+
+          <!-- <div class="add-supplier">
             <p>Add new Supplier</p>
             <img src="Assets/black-add.svg" alt="" />
+          </div> -->
+        </div>
+        <form class="updating-quantity-for-currently-available-item">
+          <p class="selected-id">ID 0002</p>
+          <input type="number" required placeholder="Quantity" />
+          <input type="submit" value="Add" />
+        </form>
+        <div class="supply-detail">
+          <div class="supply-detail-table">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Buying Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>null</td>
+                  <td>null</td>
+                  <td>null</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="supply-detail">
-          <div class="supply-detail-table" id="supply-detail-table"></div>
+        <div class="supply-detail-footer-container">
+          <div class="supply-detail-footer-sub-contain">
+            <div class="footer-detail-container">
+              <div class="footer-detail-container-child">
+                <p>Full Amount</p>
+                <p>500 000</p>
+              </div>
+              <div class="footer-detail-container-child">
+                <p>Discount</p>
+                <p>700 000</p>
+              </div>
+              <div class="footer-detail-container-child">
+                <p>Paid Amount</p>
+                <p>200 000</p>
+              </div>
+              <div class="footer-detail-container-child">
+                <p>Due Amount</p>
+                <p>200 000</p>
+              </div>
+            </div>
+            <div class="footer-button-container">
+              <button>Save</button> <button>Print</button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+
+    <!-- Modal -->
+    <!-- Select Item Modal -->
+    <div
+      class="modal fade"
+      id="select-item-modal-pop-up"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Select Item
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="select-item-modal-head-container">
+              <input type="text" />
+              <button
+                data-bs-dismiss="modal"
+                data-bs-toggle="modal"
+                data-bs-target="#add-new-item"
+              >
+                Add New Item
+              </button>
+            </div>
+            <div class="select-item-modal-body-container">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Quality</th>
+                    <th scope="col">Buying Price</th>
+                    <th scope="col">Weight</th>
+                    <th scope="col">Image</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td class="select-item-modal-product-image">
+                      <img src="Assets/product-avatar-in-sales.jpg" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td class="select-item-modal-product-image">
+                      <img src="Assets/product-avatar-in-sales.jpg" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td class="select-item-modal-product-image">
+                      <img src="Assets/product-avatar-in-sales.jpg" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td class="select-item-modal-product-image">
+                      <img src="Assets/product-avatar-in-sales.jpg" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td class="select-item-modal-product-image">
+                      <img src="Assets/product-avatar-in-sales.jpg" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td class="select-item-modal-product-image">
+                      <img src="Assets/product-avatar-in-sales.jpg" alt="" />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td class="select-item-modal-product-image">
+                      <img src="Assets/product-avatar-in-sales.jpg" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td class="select-item-modal-product-image">
+                      <img src="Assets/product-avatar-in-sales.jpg" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td>null</td>
+                    <td class="select-item-modal-product-image">
+                      <img src="Assets/product-avatar-in-sales.jpg" alt="" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-warning"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add new Item -->
+    <div
+      class="modal fade"
+      id="add-new-item"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Add New Item
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter the title"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1"
+                  >Select The Category</label
+                >
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option selected hidden>Select</option>
+                  <option>Bracelet</option>
+                  <option>Necklace</option>
+                  <option>Ring</option>
+                  <option>Earring</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Quentity</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Quentity"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Quality</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Quality"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Buying Price</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Buying Price"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Weight</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Weight (g)"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">ADD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JavaScript Linking -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
     <script src="JavaScript/inventory-add.js"></script>
   </body>
 </html>
