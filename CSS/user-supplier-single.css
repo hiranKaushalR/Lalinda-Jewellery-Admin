@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 160px 0 32px 0;
+  padding: 0 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.common-profile {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.common-profile-image-container > img {
+    width: 100%;
+    max-width: 400px;
+    min-width: 250px;
+    border-radius: 8px;
+}
+
+.common-profile-detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 280px;
+}
+
+.profile-details {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-details > p {
+  margin: 0;
+  padding: 0; 
+}
+
+.profile-details > p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .common-edit-button-container > button {
+    display: flex;
+    justify-content: center;
+    background-color: #ffd700;
+    outline: none;
+    border: none;
+    margin: 24px auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 250px;
+    padding: 6px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+
+  @media screen and (max-width: 650px) {
+    .common-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+.profile-details > p:first-child {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .profile-details > p:nth-child(2) {
+    font-size: 14px;
+  }
+  }

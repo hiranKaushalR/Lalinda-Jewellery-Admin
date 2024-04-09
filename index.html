@@ -16,7 +16,7 @@
     <div class="login-container">
       <div class="login-container--box">
         <div class="logo-container">
-          <img src="Assets/logo-in-the-login.png" alt="">
+          <img src="Assets/logo-in-the-login.png" alt="" />
         </div>
         <div class="body-container">
           <h1>Lalinda Jewellery Admin</h1>
@@ -25,25 +25,94 @@
               <div class="img-in-form">
                 <img src="Assets/user-in-login-form.svg" alt="" />
               </div>
-              <input type="text" placeholder="Username" autocomplete="username" required />
+              <input
+                type="text"
+                placeholder="Username"
+                autocomplete="username"
+                required
+              />
             </div>
             <div class="input-img--container">
               <div class="img-in-form">
                 <img src="Assets/password-in-login-form.svg" alt="" />
               </div>
-              <input type="password" placeholder="Password" autocomplete="current-password" required />
+              <input
+                type="password"
+                placeholder="Password"
+                autocomplete="current-password"
+                required
+              />
             </div>
 
-            <button type="submit" id="login-button">Log in</button>
-
-            <a href="overview.html"
-              ><p class="forget-password">Forget Password ?</p></a
+            <button type="button" id="login-button">
+              <a href="overview.html">Log in</a>
+            </button>
+            
+            <p
+              class="forget-password" data-bs-toggle="modal" data-bs-target="#exampleModal"
             >
+              Forget Password ?
+            </p>
           </form>
         </div>
       </div>
     </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable ">
+        <div class="modal-content forget-password-modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="forget-password-modal-body-container">
+              <form action="" class="forget-password-modal--form-container">
+                <div class="">
+                  <label for="forget-password-modal--email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="forget-password-modal--email" aria-describedby="emailHelp">
+                </div>
+                <div class="password-container-in-forget-modal">
+                  <div class="mb-3">
+                    <label for="forget-password-modal--password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="forget-password-modal--password">
+                  </div>
+                  <div class="mb-3">
+                    <label for="forget-password-modal--confirm-password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="forget-password-modal--confirm-password">
+                  </div>
+                </div>
+                <div class="verification-code">
+                  <label for="forget-password-modal--verification-code" class="form-label">Verification code</label>
+                  <input type="text" class="form-control" id="forget-password-modal--verification-code">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Rest Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JavaScript Linking -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

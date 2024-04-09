@@ -128,110 +128,80 @@ const ringsReportDetailContainerInAmparaSection = document.getElementById(
 );
 
 // Getting ID for Charts
-// All Section
-const doughnutInAllAllSection = document.getElementById(
-  "doughnut-in-all-all-section"
-);
+// All Section-
+
 const barchartInAllAllSection = document.getElementById(
   "barchart-in-all-all-section"
 );
 
-const doughnutInAllNecklaceSection = document.getElementById(
-  "doughnut-in-all-necklace-section"
-);
+
 const barchartInAllNecklaceSection = document.getElementById(
   "barchart-in-all-necklace-section"
 );
 
-const doughnutInAllBraceletsSection = document.getElementById(
-  "doughnut-in-all-bracelets-section"
-);
+
 const barchartInAllBraceletsSection = document.getElementById(
   "barchart-in-all-bracelets-section"
 );
 
-const doughnutInAllEarringsSection = document.getElementById(
-  "doughnut-in-all-earrings-section"
-);
+
 const barchartInAllEarringsSection = document.getElementById(
   "barchart-in-all-earrings-section"
 );
 
-const doughnutInAllRingsSection = document.getElementById(
-  "doughnut-in-all-rings-section"
-);
+
 const barchartInAllRingsSection = document.getElementById(
   "barchart-in-all-rings-section"
 );
 
 // Colombo Section
-const doughnutInColomboAllSection = document.getElementById(
-  "doughnut-in-colombo-all-section"
-);
+
 const barchartInColomboAllSection = document.getElementById(
   "barchart-in-colombo-all-section"
 );
 
-const doughnutInColomboNecklaceSection = document.getElementById(
-  "doughnut-in-colombo-necklace-section"
-);
+
 const barchartInColomboNecklaceSection = document.getElementById(
   "barchart-in-colombo-necklace-section"
 );
 
-const doughnutInColomboBraceletsSection = document.getElementById(
-  "doughnut-in-colombo-bracelets-section"
-);
+
 const barchartInColomboBraceletsSection = document.getElementById(
   "barchart-in-colombo-bracelets-section"
 );
 
-const doughnutInColomboEarringsSection = document.getElementById(
-  "doughnut-in-colombo-earrings-section"
-);
+
 const barchartInColomboEarringsSection = document.getElementById(
   "barchart-in-colombo-earrings-section"
 );
 
-const doughnutInColomboRingsSection = document.getElementById(
-  "doughnut-in-colombo-rings-section"
-);
+
 const barchartInColomboRingsSection = document.getElementById(
   "barchart-in-colombo-rings-section"
 );
 
 // Ampara Section
-const doughnutInAmparaAllSection = document.getElementById(
-  "doughnut-in-ampara-all-section"
-);
+
 const barchartInAmparaAllSection = document.getElementById(
   "barchart-in-ampara-all-section"
 );
 
-const doughnutInAmparaNecklaceSection = document.getElementById(
-  "doughnut-in-ampara-necklace-section"
-);
+
 const barchartInAmparaNecklaceSection = document.getElementById(
   "barchart-in-ampara-necklace-section"
 );
 
-const doughnutInAmparaBraceletsSection = document.getElementById(
-  "doughnut-in-ampara-bracelets-section"
-);
+
 const barchartInAmparaBraceletsSection = document.getElementById(
   "barchart-in-ampara-bracelets-section"
 );
 
-const doughnutInAmparaEarringsSection = document.getElementById(
-  "doughnut-in-ampara-earrings-section"
-);
+
 const barchartInAmparaEarringsSection = document.getElementById(
   "barchart-in-ampara-earrings-section"
 );
 
-const doughnutInAmparaRingsSection = document.getElementById(
-  "doughnut-in-ampara-rings-section"
-);
+
 const barchartInAmparaRingsSection = document.getElementById(
   "barchart-in-ampara-rings-section"
 );
@@ -678,77 +648,47 @@ function barChart(selector, data) {
   });
 }
 
-// Doughnut (pie) Chart function
-function doughnutChart(selector, data, saledCount, AllProductCount) {
-  const documentLabel = {
-    type: "beforeDatasetsDraw",
-    beforeDatasetsDraw(chart, args, pluginOptions) {
-      const { ctx } = chart;
-      ctx.save();
-      const xCoor = chart.getDatasetMeta(0).data[0].x;
-      const yCoor = chart.getDatasetMeta(0).data[0].y;
-      ctx.font = `bold ${
-        window.innerWidth >= 1200 ? "24px" : "16px"
-      }  sans-serif`;
-      ctx.fillStyle = "#000000";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText(`${saledCount}/${AllProductCount} Sales`, xCoor, yCoor);
-    },
-  };
-
-  const doughnutInAllConfig = new Chart(selector, {
-    type: "doughnut",
-    data: data,
-    plugins: [documentLabel],
-  });
-}
-
 // data
-const AllProductCounInColombo = 110;
-const saledCountInColombo = 52;
-const remainingProductCountInColombo =
-  AllProductCounInColombo - saledCountInColombo;
-const testPie = {
-  datasets: [
-    {
-      label: "My First Dataset",
-      data: [saledCountInColombo, remainingProductCountInColombo],
-      backgroundColor: ["#FFD700", "#FFFFFF"],
-      borderColor: "#000000",
-      borderDash: [5],
-      weight: 0.1,
-      hoverOffset: 10,
-    },
-  ],
-};
-
+// Barchart in All page
 const testBar = {
-  labels: ["Jan", "Feb", "Mar"],
+  labels: [
+    "Jan",
+    "Feb",
+    "Mar",
+    "April",
+    "May",
+    "June",
+    "July",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ],
   datasets: [
     {
       label: "Rings",
       backgroundColor: "#FFD700",
       borderColor: "#000000",
-      data: [67, 25, 80],
+      data: [67, 25, 80, 40, 60, 75, 80, 15, 63, 85, 12, 56],
     },
     {
       label: "Bracelets",
       backgroundColor: "#c2b469",
       borderColor: "#000000",
-      data: [39, 52, 11],
+      data: [67, 25, 80, 40, 60, 75, 80, 15, 63, 85, 12, 56],
     },
     {
       label: "Chains",
       backgroundColor: "#B09500",
       borderColor: "#000000",
-      data: [15, 11, 59],
+      data: [67, 25, 80, 40, 60, 75, 80, 15, 63, 85, 12, 56],
     },
     {
       label: "Earrings",
       backgroundColor: "#001F3F",
       borderColor: "#000000",
-      data: [92, 74, 47],
+      data: [67, 25, 80, 40, 60, 75, 80, 15, 63, 85, 12, 56],
     },
   ],
 };
@@ -756,124 +696,34 @@ const testBar = {
 // Deploy Charts 
 // Charts in All 
 barChart(barchartInAllAllSection, testBar);
-doughnutChart(
-  doughnutInAllAllSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInAllNecklaceSection, testBar);
-doughnutChart(
-  doughnutInAllNecklaceSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInAllBraceletsSection, testBar);
-doughnutChart(
-  doughnutInAllBraceletsSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInAllEarringsSection, testBar);
-doughnutChart(
-  doughnutInAllEarringsSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInAllRingsSection, testBar);
-doughnutChart(
-  doughnutInAllRingsSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 // Charts in Colombo
 barChart(barchartInColomboAllSection, testBar);
-doughnutChart(
-  doughnutInColomboAllSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInColomboNecklaceSection, testBar);
-doughnutChart(
-  doughnutInColomboNecklaceSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInColomboBraceletsSection, testBar);
-doughnutChart(
-  doughnutInColomboBraceletsSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInColomboEarringsSection, testBar);
-doughnutChart(
-  doughnutInColomboEarringsSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInColomboRingsSection, testBar);
-doughnutChart(
-  doughnutInColomboRingsSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 
 // Charts in Ampara
 barChart(barchartInAmparaAllSection, testBar);
-doughnutChart(
-  doughnutInAmparaAllSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInAmparaNecklaceSection, testBar);
-doughnutChart(
-  doughnutInAmparaNecklaceSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInAmparaBraceletsSection, testBar);
-doughnutChart(
-  doughnutInAmparaBraceletsSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInAmparaEarringsSection, testBar);
-doughnutChart(
-  doughnutInAmparaEarringsSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);
 
 barChart(barchartInAmparaRingsSection, testBar);
-doughnutChart(
-  doughnutInAmparaRingsSection,
-  testPie,
-  saledCountInColombo,
-  AllProductCounInColombo
-);

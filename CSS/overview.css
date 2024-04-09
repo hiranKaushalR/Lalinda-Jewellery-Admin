@@ -39,29 +39,9 @@ main {
   align-items: center;
 }
 
-.doughnut-in-all-container {
-  min-width: 250px;
-  width: 25%;
-}
-
-.doughnut-in-all-dropdown-container {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 16px 0;
-}
-
-.doughnut-in-all-dropdown-container > select {
-  padding: 4px 16px;
-  border-radius: 8px;
-  background-color: #008080;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-}
-
 .barchart-in-all-container {
   min-width: 500px;
-  width: 50%;
+  width: 85%;
 }
 
 @media screen and (max-width: 650px) {
@@ -81,9 +61,7 @@ main {
   }
 
   .barchart-in-all-container {
-    min-width: 0px;
     width: 100%;
-    height: 500px;
   }
 }
 

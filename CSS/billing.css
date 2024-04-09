@@ -6,87 +6,163 @@
 main {
   margin: 160px 0 0 0;
   padding: 0 5%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.billing-detail-and-form-container {
+.billing-header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 32px;
 }
 
-.billing-detail-child {
+.billing-header-account-detail {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 64px;
-}
-
-.billing-detail-id > input {
-  width: 100px;
-  border-radius: 8px;
-  outline: none;
-  padding: 3px 4px;
-  font-size: 14px;
-}
-
-.billing-form {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 12px;
 }
 
-.billing-form > input {
-  width: 350px;
-  padding: 2px 8px;
-  border-radius: 6px;
-  outline: none;
-  border-color: black;
+.billing-account-detail-profile-pic > img {
+  width: 75px;
+  border-radius: 99px;
+  border: solid 2px #000000;
 }
 
-.more-contact-info-button {
+.billing-account-detail-acc-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.billing-account-detail-acc-info > h1 {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.billing-account-detail-acc-info > p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.billing-header-select-item > form {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.input-container > input[type="text"] {
+  outline: none;
+}
+
+.input-container > input[type="submit"] {
+  outline: none;
+  border: none;
+  padding: 2px 8px;
+  background-color: #ffc700;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.billing-body {
+  margin: 48px 0;
+  min-width: 900px;
+}
+
+.billing-footer {
+  margin: 32px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cash-and-print-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.cash-and-print-section-child {
   display: flex;
   align-items: center;
   gap: 4px;
-  cursor: pointer;
 }
 
-.more-contact-info-button > p {
-  margin: 0;
+.cash-and-print-section-child > p {
   padding: 0;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.more-contact-info-button > img {
   margin: 0;
-  padding: 0;
-  width: 25px;
 }
 
-.billing-note-container {
-  margin: 24px 0 0 0;
+.cash-and-print-section-child > button {
+  border: none;
+  outline: none;
+  padding: 4px 16px;
+  background-color: #ffc700;
+  color: #fff;
+  border-radius: 4px;
 }
 
-.billing-note-container > textarea {
-  width: 100%;
-  border-radius: 6px;
-  padding: 4px 8px;
-  resize: none;
+.total-balance-discount-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.total-balance-discount-section-child {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.total-balance-discount-section-child > input {
   outline: none;
 }
 
-@media screen and (max-width: 700px) {
-  .billing-detail-and-form-container {
+.total-balance-discount-section-child > p {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1080px) {
+  .billing-header {
     flex-direction: column;
+  }
+
+  .billing-header-account-detail {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .billing-form > input {
-    width: 280px;
+@media screen and (max-width: 650px) {
+  .billing-header-select-item > form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .billing-footer {
+    flex-direction: column;
+  }
+
+  .cash-and-print-section {
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+
+
+  .cash-and-print-section {
+    flex-direction: column;
   }
 }

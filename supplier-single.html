@@ -21,7 +21,7 @@
     />
 
     <link rel="stylesheet" href="CSS/header.css" />
-    <link rel="stylesheet" href="CSS/users.css" />
+    <link rel="stylesheet" href="CSS/user-supplier-single.css" />
     <title>Lalinda Admin Panel | Users</title>
   </head>
   <body>
@@ -39,7 +39,7 @@
               alt="menu"
             />
 
-            <p class="menu-page-name">Users Manage</p>
+            <p class="menu-page-name">Supplier Profile</p>
           </div>
           <div class="user-info-container">
             <div class="text-light">
@@ -61,7 +61,7 @@
           >
             <div class="offcanvas-header">
               <h5 class="text-light fs-3" id="offcanvasDarkNavbarLabel">
-                Users Manage
+                Users Profile
               </h5>
               <button
                 type="button"
@@ -121,128 +121,150 @@
       </nav>
     </header>
     <main>
-      <div class="users-and-suppliers-adding-container">
-        <a href="user-adding.html"
-          ><div class="add-user adding-container">
-            <img src="Assets/add.svg" alt="" />
-            <h3>Add User</h3>
-          </div></a
+      <div class="user-profile common-profile">
+        <div
+          class="user-profile-image-container common-profile-image-container"
         >
-        <a href="supplier-adding.html">
-          <div class="add-supplier adding-container">
-            <img src="Assets/add.svg" alt="" />
-            <h3>Add Supplier</h3>
+          <img src="Assets/supplier-sample-avatar.png" alt="" />
+        </div>
+        <div
+          class="user-profile-detail-container common-profile-detail-container"
+        >
+          <div class="profile-details">
+            <p>ID:</p>
+            <p>0001234</p>
           </div>
-        </a>
-      </div>
-      <div class="users-and-suppliers-detail-card-container">
-        <div class="users-detail-card-container detail-card-container">
-          <h3 id="user-manage">User Manage</h3>
+          <div class="profile-details">
+            <p>Name:</p>
+            <p>Ravindu Lakshan</p>
+          </div>
+          <div class="profile-details">
+            <p>Mobile:</p>
+            <p>077 423 9863</p>
+          </div>
+          
+          <div class="profile-details">
+            <p>Gender:</p>
+            <p>Male</p>
+          </div>
+          <div class="profile-details">
+            <p>Branch:</p>
+            <p>Ampara</p>
+          </div>
+          <div class="profile-details">
+            <p>Email:</p>
+            <p>raviondulakshan@gmail.com</p>
+          </div>
+          <div class="profile-details">
+            <p>Join Date:</p>
+            <p>12/06/2024</p>
+          </div>
         </div>
-        <div class="suppliers-detail-card-container detail-card-container">
-          <h3 id="supplier-manage">Supplier Manage</h3>
-        </div>
       </div>
-      <div class="user-manage-body-section" id="user-manage-body-section">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Image</th>
-              <th scope="col">Name</th>
-              <th scope="col">Mobile</th>
-              <th scope="col">Role</th>
-              <th scope="col">Gender</th>
-              <th scope="col">Branch</th>
-              <th scope="col">Manage</th>
-              <th scope="col">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td><img src="Assets/about-chairman.png" alt="" /></td>
-              <td>Minura</td>
-              <td>0774766389</td>
-              <td>Cashier</td>
-              <td>Male</td>
-              <td>Colombo</td>
-              <td class="manage"><a href="user-single.html">Manage</a></td>
-              <td class="active">Active</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td><img src="Assets/about-chairman.png" alt="" /></td>
-              <td>Minura</td>
-              <td>0774766389</td>
-              <td>Cashier</td>
-              <td>Male</td>
-              <td>Colombo</td>
-              <td class="manage"><a href="user-single.html">Manage</a></td>
-              <td class="active">Active</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td><img src="Assets/about-chairman.png" alt="" /></td>
-              <td>Minura</td>
-              <td>0774766389</td>
-              <td>Cashier</td>
-              <td>Male</td>
-              <td>Colombo</td>
-              <td class="manage"><a href="user-single.html">Manage</a></td>
-              <td class="active">Active</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div
-        class="supplier-manage-body-section"
-        id="supplier-manage-body-section"
-      >
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Mobile</th>
-            <th scope="col">Gender</th>
-            <th scope="col">Branch</th>
-            <th scope="col">Manage</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Minura</td>
-            <td>0774766389</td>
-            <td>Male</td>
-            <td>Colombo</td>
-            <td class="manage"><a href="supplier-single.html">Manage</a></td>
-            <td class="active">Active</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Minura</td>
-            <td>0774766389</td>
-            <td>Male</td>
-            <td>Colombo</td>
-            <td class="manage"><a href="supplier-single.html">Manage</a></td>
-            <td class="active">Active</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Minura</td>
-            <td>0774766389</td>
-            <td>Male</td>
-            <td>Colombo</td>
-            <td class="manage"><a href="supplier-single.html">Manage</a></td>
-            <td class="active">Active</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="user-edit-button-container common-edit-button-container">
+        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Edit Infomation
+        </button>
       </div>
     </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Edit Infomation
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >First Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Mobile Number</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected hidden>Change The Role</option>
+                <option value="1">Cashier</option>
+                <option value="2">Admin</option>
+                <option value="3">Super Admin</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected hidden>Change The Branch</option>
+                <option value="1">Ampara</option>
+                <option value="2">Colombo</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JavaScript Linking -->
     <script

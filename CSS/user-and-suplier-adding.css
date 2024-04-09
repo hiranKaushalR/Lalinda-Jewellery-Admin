@@ -109,13 +109,15 @@ form {
 
 .form-input-button-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 0 0 32px 0;
 }
 
 .form-input-button {
-  font-size: 18px;
   font-weight: 500;
   padding: 8px 48px;
   border: none;
@@ -124,14 +126,70 @@ form {
   color: gold;
 }
 
-.pop-up-modal {
-  margin: 160px 0;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  border: solid 3px #000;
+.verify-modal-container {
+  font-family: "Poppins", sans-serif;
+}
+
+.verify-modal-body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.verify-modal-body-container > h1 {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.verify-modal-body-container > p {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.verify-modal-body-container > input {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 2px 8px;
+  text-align: center;
+  outline: none;
+  border-radius: 4px;
+}
+.verify-modal-footer-in-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verify-button-in-modal {
+  background-color: #008080;
+  color: #ffd700;
+  border: none;
+  outline: none;
+  padding: 4px 16px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.verified-modal-body-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.verified-modal-body-container > h1 {
+  font-size: 32px;
+}
+
+.verified-modal-body-container > p {
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1140px) {

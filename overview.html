@@ -30,17 +30,18 @@
 
             <p class="menu-page-name">Overview</p>
           </div>
-          <div class="user-info-container">
-            <div class="text-light">
-              <h1 class="user-name">Pamil Lalinda</h1>
-              <p class="user-designation">Chairman-super admin</p>
-            </div>
-            <img
-              src="Assets/about-chairman.png"
-              alt=""
-              class="rounded-circle user-avatar"
-            />
-          </div>
+          <a href="account.html">
+            <div class="user-info-container">
+              <div class="text-light">
+                <h1 class="user-name">Pamil Lalinda</h1>
+                <p class="user-designation">Chairman-super admin</p>
+              </div>
+              <img
+                src="Assets/about-chairman.png"
+                alt=""
+                class="rounded-circle user-avatar"
+              /></div
+          ></a>
 
           <div
             class="offcanvas offcanvas-start slider"
@@ -119,16 +120,6 @@
 
       <!-- All Tab -->
       <div class="overview-details details-about-all" id="details-about-all">
-        <div class="doughnut-in-all-container">
-          <div class="doughnut-in-all-dropdown-container">
-            <select name="" id="">
-              <option value="7" selected>7 Days</option>
-              <option value="30">One Month</option>
-              <option value="365">One Year</option>
-            </select>
-          </div>
-          <canvas id="doughnut-in-all"></canvas>
-        </div>
         <div class="barchart-in-all-container">
           <canvas id="barchart-in-all"></canvas>
         </div>
@@ -139,19 +130,9 @@
         class="overview-details details-about-colombo"
         id="details-about-colombo"
       >
-      <div class="doughnut-in-all-container">
-        <div class="doughnut-in-all-dropdown-container">
-          <select name="" id="">
-            <option value="7" selected>7 Days</option>
-            <option value="30">One Month</option>
-            <option value="365">One Year</option>
-          </select>
+        <div class="barchart-in-all-container">
+          <canvas id="barchart-in-colombo"></canvas>
         </div>
-        <canvas id="doughnut-in-colombo"></canvas>
-      </div>
-      <div class="barchart-in-all-container">
-        <canvas id="barchart-in-colombo"></canvas>
-      </div>
       </div>
 
       <!-- Ampara Tab -->
@@ -159,19 +140,9 @@
         class="overview-details details-about-ampara"
         id="details-about-ampara"
       >
-      <div class="doughnut-in-all-container">
-        <div class="doughnut-in-all-dropdown-container">
-          <select name="" id="">
-            <option value="7" selected>7 Days</option>
-            <option value="30">One Month</option>
-            <option value="365">One Year</option>
-          </select>
+        <div class="barchart-in-all-container">
+          <canvas id="barchart-in-ampara"></canvas>
         </div>
-        <canvas id="doughnut-in-ampara"></canvas>
-      </div>
-      <div class="barchart-in-all-container">
-        <canvas id="barchart-in-ampara"></canvas>
-      </div>
       </div>
     </main>
 

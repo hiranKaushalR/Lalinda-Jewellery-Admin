@@ -83,14 +83,9 @@ main {
   align-items: center;
 }
 
-.doughnut-in-common-container {
-  min-width: 250px;
-  width: 25%;
-}
-
 .barchart-in-common-container {
-  min-width: 500px;
-  width: 50%;
+  min-width: 900px;
+  width: 90%;
 }
 
 .text-report {
@@ -99,6 +94,63 @@ main {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+}
+
+.report-common-table-container {
+  margin: 32px 0;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  min-width: 900px;
+}
+
+.report-common-table-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-evenly;
+}
+
+.input-container > input {
+  padding: 2px 4px;
+  text-transform: uppercase;
+  outline: none;
+  border-radius: 6px;
+}
+
+.input-container > select {
+  padding: 4px 8px;
+  outline: none;
+  border-radius: 6px;
+}
+
+.search-icon-container > img {
+  width: 30px;
+}
+
+.report-commontable-footer-sub-contain{
+  float: right;
+}
+
+.footer-detail-container-child{
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.footer-button-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-button-container> button {
+  border: none;
+  outline: none;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #ffd700;
 }
 
 @media screen and (max-width: 650px) {
@@ -142,9 +194,7 @@ main {
   }
 
   .barchart-in-common-container {
-    min-width: 0px;
     width: 100%;
-    height: 500px;
   }
 }
 

@@ -53,7 +53,7 @@ main {
 }
 
 .detail-card-container > h3 {
-  background-color: #008080;
+  cursor: pointer;
   color: #fff;
   font-family: "Bakbak One", sans-serif;
   padding: 8px 16px;
@@ -106,6 +106,19 @@ main {
   border-radius: 8px;
   cursor: pointer;
 }
+
+tr > td > img {
+  width: 50px;
+  border-radius: 150px;
+}
+
+.manage > a {
+  padding: 4px 8px;
+  background-color: #000;
+  border-radius: 4px;
+}
+
+
 
 @media screen and (max-width: 550px) {
 
